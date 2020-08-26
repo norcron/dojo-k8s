@@ -1,0 +1,164 @@
+---
+- name: geerlingguy.nginx
+  src: https://git.wpnops.net/galaxy/geerlingguy.nginx.git
+  scm: git
+  version: "2.7.0"
+
+- name: nephelaiio.ubuntu-installer
+  src: https://git.wpnops.net/galaxy/nephelaiio.ubuntu-installer.git
+  scm: git
+  version: "2.3.4"
+
+- name: nephelaiio.gitlab
+  src: https://git.wpnops.net/galaxy/nephelaiio.gitlab.git
+  scm: git
+  version: "1.0.14"
+
+- name: nephelaiio.nfs
+  src: https://git.wpnops.net/galaxy/nephelaiio.nfs.git
+  scm: git
+  version: "2.0.2"
+
+- name: nephelaiio.pip
+  src: https://git.wpnops.net/galaxy/nephelaiio.pip.git
+  scm: git
+  version: "4.0.4"
+
+- name: geerlingguy.php
+  src: https://git.wpnops.net/galaxy/geerlingguy.php.git
+  scm: git
+  version: "3.7.0"
+
+- name: geerlingguy.git
+  src: https://git.wpnops.net/galaxy/geerlingguy.git_.git
+  scm: git
+  version: "2.0.4"
+
+- name: geerlingguy.passenger
+  src: https://git.wpnops.net/galaxy/geerlingguy.passenger.git
+  scm: git
+  version: "1.2.0"
+
+- name: nephelaiio.acme_certificate_cloudflare
+  src: https://git.wpnops.net/galaxy/nephelaiio.acme_certificate_cloudflare.git
+  scm: git
+  version: "1.0.2"
+
+- name: nephelaiio.devtools
+  src: https://git.wpnops.net/galaxy/nephelaiio.devtools.git
+  scm: git
+  version: "2.1.3"
+
+- name: nephelaiio.docker
+  src: https://git.wpnops.net/galaxy/nephelaiio.docker.git
+  scm: git
+  version: "5.0.0"
+
+- name: nephelaiio.plugins
+  src: https://git.wpnops.net/galaxy/nephelaiio.plugins.git
+  scm: git
+  version: "1.0.23"
+
+- name: ansible-ThoTeam.nexus3-oss
+  src: https://git.wpnops.net/galaxy/ansible-ThoTeam.nexus3-oss.git
+  scm: git
+  version: "v2.4.4"
+
+- name: joshualund.golang
+  src: https://git.wpnops.net/galaxy/joshualund.golang.git
+  scm: git
+
+# in gitlab dont work
+- src: elastic.elasticsearch
+  version: "7.1.1"
+
+- name: geerlingguy.logstash
+  src: https://git.wpnops.net/galaxy/geerlingguy.logstash.git
+  scm: git
+  version: "4.0.0"
+
+- name: geerlingguy.kibana
+  src: https://git.wpnops.net/galaxy/geerlingguy.kibana.git
+  scm: git
+  version: "3.1.0"
+
+- name: alvistack.jira
+  src: https://git.wpnops.net/galaxy/alvistack.jira.git
+  scm: git
+  version: "4.2.0"
+
+- name: geerlingguy.php-versions
+  src: https://git.wpnops.net/galaxy/geerlingguy.php-versions.git
+  scm: git
+  version: "3.1.0"
+
+- name: alvistack.confluence
+  src: https://git.wpnops.net/galaxy/alvistack.confluence.git
+  scm: git
+  version: "4.2.0"
+
+- name: hellofresh.sssd
+  src: https://git.wpnops.net/galaxy/hellofresh.sssd.git
+  scm: git
+  version: master
+
+- name: mhutter.docker-systemd-service
+  src: https://git.wpnops.net/galaxy/mhutter.docker-systemd-service.git
+  scm: git
+
+- name: linux-system-roles.cockpit
+  src: https://git.wpnops.net/galaxy/linux-system-roles.cockpit.git
+  scm: git
+
+- name: ovirt.engine-setup
+  src: https://git.wpnops.net/galaxy/ovirt.engine-setup.git
+  scm: git
+
+- name: ovirt.repositories
+  src: https://git.wpnops.net/galaxy/ovirt.repositories.git
+  scm: git
+
+- name: ovirt.image-template
+  src: https://git.wpnops.net/galaxy/ovirt.image-template.git
+  scm: git
+
+- name: ovirt.vm-infra
+  src: https://git.wpnops.net/galaxy/ovirt.vm-infra.git
+  scm: git
+
+- name: ovirt.infra
+  src: https://git.wpnops.net/galaxy/ovirt.infra.git
+  scm: git
+  version: 1.1.13
+
+- name: linux-system-roles.network
+  src: https://git.wpnops.net/galaxy/linux-system-roles.network.git
+  scm: git
+
+- name: gluster.infra
+  src: https://git.wpnops.net/galaxy/gluster.infra.git
+  scm: git
+
+- name: gluster.cluster
+  src: https://git.wpnops.net/galaxy/gluster.cluster.git
+  scm: git
+
+- name: ahuffman.resolv
+  src: https://git.wpnops.net/galaxy/ahuffmann.resolv.git
+  scm: git
+  version: 1.3.1
+
+- name: bertvv.hosts
+  src: https://git.wpnops.net/galaxy/bertvv.hosts.git
+  scm: git
+  version: v1.2.0
+
+- name: nginxinc.nginx
+  src: https://git.wpnops.net/galaxy/nginxinc.nginx.git
+  scm: git
+  version: 0.12.0
+
+- name: PowerDNS.pdns
+  src: https://git.wpnops.net/galaxy/powerdns.pdns.git
+  scm: git
+  version: v1.5.0

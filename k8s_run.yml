@@ -1,0 +1,39 @@
+---
+- name: K8s | Deployment for Dojo
+
+  host: k8s_master
+
+  environment: "{{ proxy_env | default({}) }}"
+
+  serial: 1
+
+  become: yes
+
+  roles:
+    - nephelaiio.plugins
+
+  tasks:
+
+    - name: include private variables
+      include_vars:
+        dir: "../../{{ item }}"
+      with_items: "{{ vaults }}"
+
+    # - name: Docker login to registry
+    #   docker_login:
+    #     username: "{{ docker_private_registry_username }}"
+    #     password: "{{ docker_private_registry_password }}"
+    #     registry: "{{ docker_private_registry_url }}"
+    #     state: "{{ docker_private_registry_state }}"
+    #   register: docker_login
+    
+    - name: set facts for service files with runtime settings
+      set_fact:
+        working_dir_host: "/srv/containers"
+        working_dir_container: "{{ dotnet_default_working_dir | default('/app') }}"
+
+    - name: create service directory
+      file:
+        path: "{{ working_dir_host }}"
+        state: directory
+      register: service_directory

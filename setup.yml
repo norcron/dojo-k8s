@@ -1,0 +1,19 @@
+---
+- name: Install profile prerequisites
+
+  hosts: localhost
+
+  connection: local
+
+  tasks:
+
+    - block:
+
+        - name: install required pips
+          pip:
+            requirements: "{{ playbook_dir }}/requirements.txt"
+
+      become: yes
+
+    - name: run ansible galaxy
+      local_action: command ansible-galaxy install -r roles/requirements.yml -p galaxy/ --force
