@@ -1,10 +1,10 @@
 ---
 - name: geerlingguy.git
-  src: https://git.wpnops.net/galaxy/geerlingguy.git_.git
+  src: https://github.com/geerlingguy/ansible-role-git.git
   scm: git
   version: "2.0.4"
 
 - name: nephelaiio.plugins
-  src: https://git.wpnops.net/galaxy/nephelaiio.plugins.git
+  src: https://github.com/nephelaiio/ansible-role-plugins.git
   scm: git
   version: "1.0.23"
