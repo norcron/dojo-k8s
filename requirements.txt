@@ -9,4 +9,3 @@ dnspython>=1.15.0
 bigsuds>=1.0.6
 deepdiff==3.3.0
 passlib>=1.7.1
-ovirt-engine-sdk-python>=4.3.0
