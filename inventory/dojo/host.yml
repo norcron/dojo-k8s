@@ -3,11 +3,9 @@ all:
   host:
     localhost:
       ansible_connection: local
-    sun-dojo.net:
+    sun-k8sdojo.net:
       ansible_host: 167.172.155.203
-      dns_cname:
-        - k8s.dojo.net
 
 k8s_master:
   hosts:
-    sun-dojo.net
+    sun-k8sdojo.net:

@@ -1,7 +1,7 @@
 ---
 - name: K8s | Deployment for Dojo
 
-  host: k8s_master
+  hosts: k8s_master
 
   environment: "{{ proxy_env | default({}) }}"
 
