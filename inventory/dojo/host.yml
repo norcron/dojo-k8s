@@ -1,6 +1,6 @@
 ---
 all:
-  host:
+  hosts:
     localhost:
       ansible_connection: local
     sun-k8sdojo.net:

@@ -16,7 +16,7 @@
 
     - name: include private variables
       include_vars:
-        dir: "../../{{ item }}"
+        dir: "{{ item }}"
       with_items: "{{ vaults }}"
     
     - name: set facts for service files with runtime settings
