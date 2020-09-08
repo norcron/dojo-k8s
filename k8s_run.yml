@@ -14,10 +14,10 @@
 
   tasks:
 
-    - name: include private variables
-      include_vars:
-        dir: "{{ item }}"
-      with_items: "{{ vaults }}"
+    # - name: include private variables
+    #   include_vars:
+    #     dir: "{{ item }}"
+    #   with_items: "{{ vaults }}"
     
     - name: set facts for service files with runtime settings
       set_fact:
