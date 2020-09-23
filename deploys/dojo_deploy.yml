@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-deploy
+  namespace: default
+  labels:
+    app: hello-world
 spec:
   replicas: 10
   minReadySeconds: 10
@@ -20,6 +23,6 @@ spec:
     spec:
       containers:
       - name: hello-pod
-        image: mcr.microsoft.com/dotnet/core/samples:aspnetapp
+        image: korxaq/korxaq-docker-repository:6
         ports:
         - containerPort: 80
